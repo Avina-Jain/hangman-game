@@ -125,5 +125,9 @@ playAgainBtn.addEventListener('click', () => {
 	popup.style.display = 'none';
 });
 
+if(window.matchMedia('(prefers-color-scheme: dark)').matches){
+	document.documentElement.setAttribute("dark", true)
+}
+
 displayWord();
 

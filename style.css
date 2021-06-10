@@ -2,6 +2,16 @@
   box-sizing: border-box;
 }
 
+html {
+  --bg-color: #fff;
+  --color: #000;
+}
+
+html[dark] {
+  --bg-color: #000;
+  --color: #fff;
+}
+
 body {
   background-color: #d61843;
   color: #18d6ab;
@@ -123,4 +133,11 @@ h1 {
 
 .show {
   transform: translateY(-60px);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+    color: #fff;
+  }
 }
